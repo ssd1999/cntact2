@@ -1,0 +1,60 @@
+<div class="overlay" >
+  
+<div class="content"  >
+ 
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  
+  
+    <br />
+    <!-- <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"> &nbsp; -->
+    
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName" required> 
+    <!-- <input type="Name" placeholder="Name" size="60" minlength="3" maxlength="64"/> -->
+  
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+
+    <label for="company">Company: </label>
+    <input id="company" type="text" formControlName="company" required>
+    
+
+    <label for="email">Email: </label>
+    <input id="email" type="text" formControlName="email" required>
+  
+    <div formGroupName="address">
+      <!-- <h3>Address</h3> -->
+  
+      <label for="address">Address: </label>
+      <input id="address" type="text" formControlName="address">
+  
+      <label for="city">City: </label>
+      <input id="city" type="text" formControlName="city">
+  
+      <label for="state">State: </label>
+      <input id="state" type="text" formControlName="state">
+  
+      <label for="zip">Zip Code: </label>
+      <input id="zip"type="text" formControlName="zip">
+
+      <label for="phonenumber">Phone Number: </label>
+      <input id="phonenumber"type="text" formControlName="phonenumber">
+    </div>
+   
+
+<!--     
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button> -->
+    <button type="submit"> Submit</button> <button type="close"> Close</button>
+    <button mat-button mat-dialog-close>close</button>
+    
+  </form>
+  
+  
+<!-- 
+  <button type="button" (click)="updateProfile()"> Update </button>  -->
+
+  </div></div>
+  
+  
+  
+  

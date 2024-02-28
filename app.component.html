@@ -1,0 +1,18 @@
+<h2>Contacts</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+ <input type="text" placeholder="Search.." name="search" style="width: 300px;">
+</form>
+
+<h1>Contacts</h1>
+
+   <button mat-button (click)="openFormDialog()">Open Form Dialog</button>
+
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search" style="width: 800px;">
+
+  <button type="button" (click)="toggleEditor('profile')">Add</button>
+  <app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
+  <app-profile-editor *ngIf="Add"></app-profile-editor>
